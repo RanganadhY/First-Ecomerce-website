@@ -6,78 +6,224 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MADINN</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/hf-style.css">
     <link rel="icon" href="./Images/img/clothes-button-with-four-holes.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
 </head>
-<body>
+
+
+<body onload = "slider()" >
+
     <!-- navigation bar section  -->
-    <section class="header">
-        <!-- Website logo -->
+    <section class="header"> 
         <a href="#" class="logo"><img src="./Images/img/logo.png" alt="logo of the website"></a>
-        
-        <!-- website navigation -->
         <nav class="nav-bar">
             <ul class="nav-menu">
                 <li><a class="active" href="index.html">Home</a></li>
-                <li><a   href="shop.html">Shop</a></li>
                 <li><a  href="blog.html">Blog</a></li>
-                <li><a  href="about us.html">About Us</a></li>
-                <li><a  href="contact us.html">Contact Us</a></li>
+                <li><a  href="aboutus.html">About Us</a></li>
+                <li><a  href="contactus.html">Contact Us</a></li>
                 <li><a  href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
             </ul>
         </nav>
     </section>
 
     <!-- Hero section -->
-    <section class="hero">
-        <h4>Tired of picking an outfit for an occasion</h4>
-        <h1>Don't Worry we are here for you</h1>
-        <h2>We Present You Cara</h2>
-        <button>Get Your Outfit</button>
+    <section class="hero"> 
+        
+        <h1>Style,</h1>
+        <h2>Your Way.</h2>
+        <div class="paragraph-wrapper">
+            <h3>Stress-free shopping - receive your personal selection curated by our AI powered model, 
+                tailored to you!</h3>
+        </div>
+        <button>TRY IT NOW</button>
     </section>
-    
-    <!-- features section -->
-    <section class="features section-p1">
-        <div class = "feature-box">
-            <img src="./Images/img/features/undraw_web_shopping_re_owap.svg" alt="">
-            <h6>Occasion Based Outfits</h6>
+
+    <!-- how it works -->
+    <section class="howitworks section-p1"> 
+        <div class="hiw-title">
+            <div class="hiw-title-1">
+                <h4>How It Works</h4>
+                <h2 >We Acompany On Your Personal Style Journey.</h2>
+            </div>
         </div>
-        <div class = "feature-box">
-            <img src="./Images/img/features/undraw_season_change_f99v.svg" alt="">
-            <h6>Save Time</h6>
-        </div>
-        <div class = "feature-box">
-            <img src="./Images/img/features/undraw_Deliveries_2r4y.svg" alt="">
-            <h6>Quick Delivary</h6>
-        </div>
-        <div class = "feature-box">
-            <img src="./Images/img/features/undraw_active_support_re_b7sj.svg" alt="">
-            <h6>F 24/7 Support</h6>
-        </div>
+        <ul class="hiw-list-wrapper">
+            <li class="hiw-listitem-wrapper">
+                <div class="hiw-list-items">
+                    <div class="hiw-icon-wrapper">
+                        <img class='first-hiw' src="./Images/img/how it works/outfit.svg.png" alt="">
+                    </div>
+                    <h3>Tell Us Which Styles You Like and Which Items You Need.</h3>
+                    <p>Your Box Is Tailored To Fit Size And Budget.</p>
+                </div>
+            </li>
+            <li class="hiw-listitem-wrapper">
+                <div class="hiw-list-items">
+                    <div class="hiw-icon-wrapper">
+                        <img src="./Images/img/how it works/machine learning.png" alt="">
+                    </div>
+                    <h3>Our AI Powered model will send you your personally selected clothes.</h3>
+                    <p>Our AI model handpicks items so that you look and feel at your best.</p>
+                </div>
+            </li>
+            <li class="hiw-listitem-wrapper last-wrapper">
+                <div class="hiw-list-items">
+                    <div class="hiw-icon-wrapper">
+                        <img class = "third-hiw"src="./Images/img/how it works/check-listpng.png" alt="">
+                    </div>
+                    <h3>Only pay for the items you keep.</h3>
+                    <p>You only pay what you keep. Shipping and returns are on us.</p>
+                </div>
+            </li>
+        </ul>
         
     </section>
 
-    <!-- featured produts -->
-    <section class="products section-p1">
-        <h1>Our Most Sold Out Outfits</h1>
-        <div class="pro-container">
-            <img src="./Images/img/products/f1.jpg" alt="">
-            <div class="des">
-                <span>Adidas</span>
-                <h5>Crtoon Astronut shirt</h5>
-                <div class="star">
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
-                    <a href="#"><i class="fas fa-star"></i></a>
+
+    <!-- what's missing -->
+    <section class="wim section-p1">
+        <div class="wim-text-container">
+            <h4 class="wim-h4-style">What's Missing From Your Wardrobe</h4>
+            <p class="wim-p-style">Receive <span>styled outfits</span> or 
+                <span>a selection of clothes from the categories you choose</span> 
+                - always tailored to your taste and budget.</p>
+        </div>
+        <ul class="wim-image-wrapper">
+            <li class="wim-list-item-wrapper">
+                <span class= "wim-span1">Sportswear</span>
+                <div class="wim-img-container wim-img1">
+                    <img src="./Images/img/whats missing/select_image_1_desktop.webp" alt="">
                 </div>
-                <h4>$36</h4>
+            </li>
+            <li class="wim-list-item-wrapper">
+                <span class= "wim-span2">Complete Outfit</span>
+                <div class="wim-img-container wim-img2">
+                    <img src="./Images/img/whats missing/select_image_2_desktop.webp" alt="">
+                </div>
+            </li>
+            <li class="wim-list-item-wrapper">
+                <span class= "wim-span3">Selected Category Footwear</span>
+                <div class="wim-img-container wim-img3">
+                    <img src="./Images/img/whats missing/select_image_3_desktop.webp" alt="">
+                </div>
+            </li>
+            <li class="wim-list-item-wrapper">
+                <span class= "wim-span4">Basics</span>
+                <div class="wim-img-container wim-img4">
+                    <img src="./Images/img/whats missing/t-shirts-neutral-colors-black-hanger-against-gray-wall_176873-9866.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Brands For EveryMan -->
+    <section class="bfem section-p1">
+        <div class="bfem-text-wrapper">
+            <h3>Brands for every man</h3>
+            <p>Our AI stylist will select the perfect clothes for you from over 200 brands.
+                You save time shopping,
+                while still discovering new styles, items and brands.
+            </p>
+        </div>
+        <div class="bfem-logo-wrapper">
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/vans.svg" alt="">
             </div>
-            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/benetton.svg" alt="">
+            </div>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/tommy.svg" alt="">
+            </div>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/calvin.svg" alt="">
+            </div>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/izod.svg" alt="">
+            </div>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/adidas.svg" alt="">
+            </div>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/gucci.svg" alt="">
+            </div>
+            <div class="bfem-logo-container">
+                <img src="./Images/img/brand logo/armani.svg" alt="">
+            </div>
+            <div class="bfem-logo-container brand-span">
+                
+                    <span>200+ More</span>
+                
+            </div>
+            
         </div>
     </section>
+
+    <section class="newsletters">
+        <div class="newstext">
+            <h4>Sign up For Newsletters</h4>
+            <p>Get E-Mail updates about our latest outfits and <span>Special offers</span> </p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email adress">
+            <button class = "normal">Sign Up</button>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="section-p1">
+
+        <div class="col">
+            <img class = "logo" src="./Images/img/logo.png" alt="">
+            <h4>Contact Us</h4>
+            <p><strong>Adress:</strong> Lorem ipsum dolor sit, amet consectetur a</p>
+            <p><strong>Phone:</strong> +91 7093409340/(91+) 0123456789</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon-Sat</p>
+            <div class="fallow">
+                <h4>Fallow Us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-linkedinn"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>Aoubt</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivary Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">Veiw Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Istall App</h4>
+            <p>From App Store or google Play</p>
+            <div class="row">
+                <img src="./Images/img/pay/app.jpg" alt="">
+                <img src="./Images/img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="./Images/img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copywright">
+            <p>Lorem ipsum dolor sit amet cons</p>
+        </div>
+    </footer>
     <script src="./JS/index.js"></script>
 </body>
 </html>

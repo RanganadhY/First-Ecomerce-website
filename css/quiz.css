@@ -1,0 +1,101 @@
+/* -------question-1 styling --------*/
+.question1{
+    padding: 50px;
+    /* position: relative; */
+}
+.question1 .question1-container{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* position:fixed;
+    top:85px ; */
+    padding: 20px;
+}
+.question1 .question1-img-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between;
+
+}
+.question1 .question1-img-wrapper img{
+    width: 300px;
+    height: 350px;
+    padding: 10px 0;
+    /* flex-basis: 1; */
+    transition: 200ms;
+}
+.question1 .question1-img-wrapper span{
+    width: 300px;
+    height: 350px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+
+}
+.question1 .question1-img-wrapper img:hover,
+.question1 .question1-img-wrapper span:hover{
+    border: 2px solid  #00b4d8;
+    border-radius: 5px;
+}
+.question1 .question1-button-container{
+    padding:20px 0 ;
+    display: flex;
+    flex-direction:row-reverse;
+}
+.question1 .question1-button-container button{
+    background-color: #088178;
+    color: #fff;
+}
+
+/* -------question-2 styling --------*/
+.question2{
+    padding: 50px;
+}
+.question2 .question1-container{
+    text-align: center;
+    background-color:rgba(255, 255, 255, 0.8);
+}
+.question2 .question2-img-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: space-between;
+
+}
+.question2 .question2-img-wrapper img{
+    width: 200px;
+    height: 220px;
+    padding: 10px 0;
+    /* flex-basis: 1; */
+    transition: 200ms;
+}
+.question2 .question2-img-wrapper span{
+    width: 250px;
+    height: 250px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+
+}
+.question2 .question2-img-wrapper img:hover,
+.question2 .question2-img-wrapper span:hover{
+    border: 2px solid  #00b4d8;
+    border-radius: 5px;
+}
+.question2 .question2-button-container{
+    padding:20px 0 ;
+    display: flex;
+    justify-content:space-between;
+}
+.question2 .question2-button-container button{
+    background-color: #088178;
+    color: #fff;
+}

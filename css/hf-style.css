@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400;500;600;700&display=swap');
+/* -----------basic global shit------------------ */
+@font-face {
+    font-family: Butler Stencil;
+    src: url("../fonts/ButlerStencil-Bold/Butler_and_ButlerStencil/Butler_Stencil_Webfont/butler_bold_stencil-webfont.woff") format("woff");
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    width: 100%;
+}
+html{
+    font-size:100%;
+}
+h1{
+    font-size :50px;
+    color: #222;
+    /* line-height: 1.6; */
+}
+h2{
+    font-size: 46px;
+    /* line-height: 1.6; */
+    color: #222;
+}
+h3{
+    font-size:40px;
+    line-height: 1.6;
+    color: #222;
+}
+h4{
+    font-size:15px;
+    /* line-height: 1.6; */
+    color: #222;
+}
+p{
+    font-size:16px;
+    line-height: 1.6;
+    color: #465b52;
+    margin:15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 80px 50px 10px 50px;
+}
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius:4px;
+    transition-property: background-color color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+/* -----------------------header styling ----------------------------*/
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    background-color: #E3E6F3;
+    padding: 20px 60px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0,0.06);
+    z-index: 999;
+    position:sticky;
+    top: 0px;
+    left: 0px;
+    /* bottom: 500px; */
+    /* overflow:scroll; */
+}
+.nav-menu{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    
+}
+.nav-menu li{
+    list-style: none;
+    padding: 0 10px;
+    position: relative;
+}
+.nav-menu li a{
+    text-transform:uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition-property: color;
+    transition-duration:200ms;
+    transition-timing-function: ease-in;
+}
+.nav-menu li a:hover{
+    color: #088178;
+    
+}
+.nav-menu li a:hover::after{
+    content: "";
+    background-color: #088178;
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+    border-radius:10px;
+    animation-name: slide;
+    animation-duration:400ms;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 1;
+}
+@keyframes slide{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+
+}
+.nav-menu li a:active{
+    color: #088178;
+
+}
+.nav-menu li a.active::after{
+    content: "";
+    background-color: #088178;
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 20px;
+    border-radius:10px;
+}
+
+
+
+
+/* --------Footer Stylings------ */
+footer{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    /* box-shadow: 0 -5px 15px rgb(0, 0, 0,0.06); */
+    border-top: 1px solid #d7d8d9;
+    
+}
+footer .col{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-bottom: 15px;
+}
+footer .logo{
+    padding-bottom:10px;
+}
+footer h4{
+    padding: 10px 0 10px 0;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+footer p{
+    margin: 0 0 8px 0;
+    font-size: 14px;
+
+}
+footer .fallow .icon{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+
+}
+footer .fallow .icon i{
+    margin: 0 5px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+footer .fallow .icon i:nth-child(1){
+    background-color: 	#4267B2;
+    color: #fff;
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+footer .fallow .icon i:nth-child(1):hover{
+    color:#4267B2;
+    background-color:white;
+}
+footer .fallow .icon i:nth-child(3){
+    background-color: 	#00acee;
+    color: #fff;
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+footer .fallow .icon i:nth-child(3):hover{
+    color:#00acee;
+    background-color:#fff;
+}
+footer .fallow .icon i:nth-child(2){
+    background-color:#8a3ab9;
+    color: #fff;
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+footer .fallow .icon i:nth-child(2):hover{
+    color:#8a3ab9;
+    background-color:white;
+}
+footer .fallow .icon i:nth-child(4){
+    background-color:#FF0000;
+    color: #fff;
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+}
+footer .fallow .icon i:nth-child(4):hover{
+    color:#FF0000;
+    background-color:white;
+}
+footer .col a{
+    text-decoration: none;
+    color:#34454e ;
+    margin-bottom:10px;
+    transition-property: color background-color;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in;
+    position: relative;
+}
+footer .col a:hover{
+    color: #088178;
+}
+footer .col a:hover::after{
+    content: "";
+    background-color: #088178;
+    width: 30%;
+    height: 2px;
+    position: absolute;
+    bottom: -2px;
+    left: 0px;
+    border-radius:10px;
+    animation-name: slide;
+    animation-duration:300ms;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count: 1;
+    
+}
+footer .install .row img{
+    border:1px solid #088178;
+    border-radius:6px;
+}
+.footer .install img{
+    margin:10px 0 15px 0;
+}
